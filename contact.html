@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>MySchool</title>
+    <style>
+        .header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+overflow: hidden;}
+       .contact{
+           width: 100%;
+           padding: 100px;
+           align-items: center;
+           display: flex;
+           flex-basis: 44%;
+          
+       }
+       .long{
+           width: 80%;
+           padding: 100px;
+           flex-basis: 44%;
+          display: flex;
+       }
+      form{
+         width: 500px;
+          display: flex;
+          flex-direction: column;
+          margin-left: 200px;
+         box-shadow: 3px 3px 3px   lightseagreen;
+         padding: 10px;
+         border-radius: 30px;
+
+      }
+      input{
+          padding: 10px;
+          border-radius:10px ;
+          margin:15px;
+        
+      }
+      textarea{
+        padding: 10px;
+          border-radius:10px ;
+          margin:15px;
+      
+      }
+      .long .fa{
+        color: #f44336;
+      }
+       .map{
+           width: 80%;
+           padding: 100px;
+       }
+       .hero-btn-1{
+        display: inline-block;
+        text-decoration: none;
+        color:#f44336;
+        border: 1px solid #f44336;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    }
+    .hero-btn-1:hover{
+        border:1px solid #f44336;
+        background: #f44336;
+        transition:1s ;
+        color: #fff;
+    }
+
+       @media(max-width:700px){
+        .map{
+           width: 90%;
+           padding: 10px;
+           height: 300px;
+       }
+       .long{
+           width: 80%;
+           margin-top: 70px;
+           flex-direction:column;
+          display: flex;
+          padding: 100px;
+          padding-left: 10px;
+
+       }
+       span{
+           font-size: 15px;
+       }
+       form{
+       width: 100%;
+          display: flex;
+          flex-direction: column;
+        margin: auto;
+         box-shadow: 3px 3px 3px   lightseagreen;
+         padding: 10px;
+         border-radius: 30px;
+
+      }
+      input{
+          padding: 5px;
+          border-radius:10px ;
+          margin:15px;
+        
+      }
+      textarea{
+        padding: 10px;
+          border-radius:10px ;
+          margin:15px;
+      
+      }
+       }
+</style>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact us -->
+
+<section contact>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4337246073255!2d77.1573463141859!3d28.55673588244774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1db09b0576e1%3A0xc77a72699035fa4d!2sSarvodaya%20Vidyalaya%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1631274961510!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="long">
+        <div class="lg-col">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          <span>  33 G, Lt Shaheed Ribhu Saxena Marg, <br> CGHS Colony, Vasant Vihar, New Delhi, Delhi 110057</span>
+            <br><br>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span> +91 345 XXX XXX XX</span>
+            <br><br>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>ritik@gmail.com</span>
+
+        </div>
+        <div class="lg-col">
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                <a class="hero-btn-1" href="">Send Message</a>
+            </form>
+        </div>
+    </div>
+
+</section>
+    
+         <!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo numquam ipsam incidunt fugit consectetur velit provident tempora vero,  <br>quaerat perspiciatis amet, quisquam ten
+       Illo aspernatur commodi veritatis minima perspiciatis?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with   <i class="fa fa-heart-o"></i> By RITIK</p>
+</section>
+
+<!-- javascript Toggle bar -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

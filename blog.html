@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>MySchool</title>
+    <style>
+        .header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+overflow: hidden;}
+  .blog{
+      width: 80%;
+      display: flex;
+      flex-basis: 44%;
+      margin: auto;
+      justify-content: space-between;
+
+  }
+  .blog img{
+      width: 100%;
+     
+  }
+  .hero-btn-1{
+        display: inline-block;
+        text-decoration: none;
+        color:#f44336;
+        border: 1px solid #f44336;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    
+    }
+    .hero-btn-1:hover{
+        border:1px solid #f44336;
+        background: #f44336;
+        transition:1s ;
+        color: #fff;
+
+    }
+    form{
+        border: 2px solid whitesmoke;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        border-radius:10px ;
+        display: flex;flex-direction: column;
+        box-shadow: 2px 2px 2px silver;
+
+    }
+   
+    form input{
+       padding: 10px;
+       border-radius:30px ;
+        width: 70%;
+        background-color: lightgray;
+        border: none;
+
+    }
+   form textarea{
+    width: 70%;
+    border-radius:10px ;
+    background-color: lightgray;
+    
+border: none;
+   }
+    legend{
+        padding: 10px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    form{
+        margin: 30px;
+        display: flex;
+        align-items: center;
+        
+    }
+   table{
+      
+       padding: 20px;
+       width: 400px;
+   }
+   @media(max-width:700px){
+       .text-box h1{
+           font-size: 16px;
+       }
+    .blog-col h3{
+        font-size: 15px;
+    }
+  .blog-col p{
+      font-size: 12px;
+  }
+  form{
+       margin: 5px;
+       padding: 0;
+        display:block;
+      text-align: center;
+        
+    }
+    form input{
+        margin: 5px;
+    }
+   table{
+      padding: 0;
+      width: 200px;
+
+      
+   }
+   }
+</style>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Our Certificate & Online Programs</h1>  
+        </div>
+        
+    </section>
+    <!-- blog -->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-col">
+                <img src="certificate.jpg" alt="">
+                <h3>Our Certificate & Online Programs</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatibus ad a optio incidunt ipsa, sunt, dolorum esse unde 
+                  eligendi neque, illo alias dolor dicta. Dolores blanditiis nostrum adipisci sapiente!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo totam non autem corrupti earum numquam unde accusantium consectetur. Excepturi minus magni officia tempora sapiente quasi exercitationem ut assumenda? 
+                    Architecto, odio!</p> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi quas laboriosam ullam! Perferendis, sint alias earum libero dignissimos, impedit aliquid velit, molestias laudantium aspernatur numquam quaerat deleniti consequatur doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur, explicabo pariatur esse itaque laborum perspiciatis est nulla dicta illo iure necessitatibus dolores doloremque nemo ipsam consequatur libero mollitia fugiat sit nisi repellendus magnam quae quidem earum. Officiis exercitationem quisquam fugiat facere? Quas, sapiente nisi, tempore corporis quis maxime iste voluptas atque ipsum est explicabo quidem unde id quo recusandae perspiciatis omnis! Earum voluptate architecto similique doloribus asperiores tempore. Laboriosam impedit voluptate exercitationem consequatur tempora atque. Veritatis iusto nulla eum! Aspernatur amet laborum, magnam deserunt dolore 
+                        unde fuga nulla eaque atque. Nobis quibusdam voluptatibus id architecto. Iusto maiores modi facere?</p>
+      
+                        
+                            <form action="GETPOST">
+                                <legend>leave a comment</legend>
+                                <input type="text" placeholder="Enter Name "><br>
+                                <input type="text" placeholder="Enter Email "><br>
+                                <textarea name="Comment" id="comment" placeholder="Your Comment" cols="50" rows="4"></textarea><br>
+                                <a class="hero-btn-1" href="">POST COMMENT</a>
+                             </form>
+                     
+
+
+            </div>
+            <div class="blog-col">
+             <form>
+                 <table>
+                     <tr>Post Categories</tr>
+                     <tr></tr>
+                     <th>Business Analytices</th>
+                     <td>21</td>
+                       <tr></tr>
+                     <th>Data Science</th>
+                     <td>28</td>
+                     <tr></tr>
+                     <th>Machine learning</th>
+                     <td>15</td>
+                     <tr></tr>
+                     <th>Schools</th>
+                     <td>9</td>
+                 </table>
+             </form>
+        </div>
+    </section>
+
+    
+         <!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo numquam ipsam incidunt fugit consectetur velit provident tempora vero,  <br>quaerat perspiciatis amet, quisquam ten
+       Illo aspernatur commodi veritatis minima perspiciatis?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with   <i class="fa fa-heart-o"></i> By RITIK</p>
+</section>
+<!-- javascript Toggle bar -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
